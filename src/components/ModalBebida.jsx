@@ -9,7 +9,7 @@ export default function ModalBebida() {
         for (let i = 1; i<16; i++) {
             if (receta[`strIngredient${i}`]) {
                 ingredientes.push(
-                    <li>{receta[`strIngredient${i}`] }{`receta.strMeasure${i}`}</li>
+                    <li className="mt-1">{receta[`strIngredient${i}`]} = {receta[`strMeasure${i}`]}</li>
                 )
             }
             
