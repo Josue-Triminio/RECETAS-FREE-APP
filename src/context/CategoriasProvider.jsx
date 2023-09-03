@@ -12,7 +12,7 @@ const CategoriasProvider=({children})=>{
             setCategorias(data.drinks);
             
         } catch (error) {
-            console.log('Se produjo un Error');
+            
         }
     }
     useEffect(() => {

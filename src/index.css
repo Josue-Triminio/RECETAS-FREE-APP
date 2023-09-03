@@ -11,3 +11,9 @@ header h1 {
   background-color: #EC3A49;
   border: none;
 }
+
+.contenedor{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
