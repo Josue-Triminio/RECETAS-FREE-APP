@@ -41,6 +41,10 @@ const BebidasProvider=({children})=>{
     const handleBebidaId=(id)=>{
          setBebidaId(id)
     }
+    const cerraModal=()=>{
+        setModal(false)
+    }
+
     
     return(
         <BebidasContext.Provider
@@ -51,7 +55,8 @@ const BebidasProvider=({children})=>{
                 modal,
                 handleBebidaId,
                 receta,
-                cargando
+                cargando,
+                cerraModal
 
 
             }}

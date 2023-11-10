@@ -27,7 +27,7 @@ export default function Formulario() {
         
             <Col  md={6}>
                 <FormGroup className="  mb-3">
-                    <FormLabel htmlFor="categoria">Busca una Categoria</FormLabel>
+                    <FormLabel htmlFor="categoria" className="mt-5"></FormLabel>
                     <FormSelect id="categoria" name="categoria" value={busqueda.categoria}
                             onChange={e=> setBusqueda({
                                 ...busqueda,

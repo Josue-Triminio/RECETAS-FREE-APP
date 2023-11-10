@@ -1,11 +1,24 @@
+body{
+  background-color: black;
+}
+
 header {
   background-color: #EC3A49;
   color: white;
   text-align: center;
 }
-header h1 {
+ h1 {
   font-family: 'Outfit', sans-serif;
   font-weight: 900;
+  text-align: center;
+  padding: 2rem;
+  color: white;
+  font-size: 4em;
+  background-color: black;
+  
+}
+span{
+  color: #EC3A49;
 }
 .btn{
   background-color: #EC3A49;
@@ -16,4 +29,23 @@ header h1 {
   display: flex;
   align-items: center;
   justify-content: center;
+}
+.banner{
+  height: 100vh;
+  background-image: url(./img/banner.jpg);
+  background-size: cover;
+  
+}
+.fondo{
+  background-color: black;
+}
+
+.cerrar_modal{
+  background-color: #EC3A49;
+  border: none;
+  width: 100%;
+  color: white;
+  padding: .5rem;
+  border-radius: .4rem;
+  margin-top: 1rem;
 }

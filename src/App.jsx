@@ -6,21 +6,23 @@ import ListadoBebidas from "./components/ListadoBebidas"
 import ModalBebida from "./components/ModalBebida"
 
 
+
 function App() {
   
 
   return (
     <CategoriasProvider>
       <BebidasProvider>
-        <header className="py-5">
-          <h1>Drinki Proyect</h1>
-        </header>
-        <Container className="mt-5">
+        <div className="banner">
+          <h1>RECETAS <span>FREE</span> APP</h1>
+        <Container>
           <Formulario />
           <ListadoBebidas />
           <ModalBebida />
         </Container>
+        </div>
       </BebidasProvider >
+      
     </CategoriasProvider>
   )
 }

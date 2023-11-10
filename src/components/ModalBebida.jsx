@@ -1,7 +1,7 @@
 import { Modal,Image } from "react-bootstrap"
 import useBebidas from "../hooks/useBebidas"
 export default function ModalBebida() {
-    const {modal,handleModalClick,receta,cargando}=useBebidas()
+    const {modal,handleModalClick,receta,cargando,cerraModal}=useBebidas()
     
   
     const mostrarIngredientes=()=>{
@@ -16,7 +16,7 @@ export default function ModalBebida() {
         }
         return ingredientes
     }
-
+   
 
   return (
     !cargando && (
@@ -31,6 +31,7 @@ export default function ModalBebida() {
                {receta.strInstructions}
                <h2>Ingredientes y Cantidades</h2>
                {mostrarIngredientes()}
+               <button onClick={cerraModal} className="cerrar_modal">CERRAR</button>
           </div>
        </Modal.Body>
 
